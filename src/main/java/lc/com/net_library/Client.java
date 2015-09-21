@@ -266,7 +266,7 @@ public class Client extends Connection implements EndPoint {
 		if (updateThread != null) {
 			shutdown = true;
 			try {
-				updateThread.join(5000);
+				updateThread.join(2000);
 			} catch (InterruptedException ignored) {
 			}
 		}
